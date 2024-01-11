@@ -1,0 +1,35 @@
+{
+  "Customers": {
+    "_id": "ObjectId",
+    "name": "string",
+    "age": "integer",
+    "gender": "string",
+    "location": "string",
+    "carts": [
+      {
+        "_id": "ObjectId",
+        "product_id": "ObjectId",
+        "variation": [
+          {
+            "name": "string",
+            "value": "string"
+          }
+        ],
+        "quantity": "integer"
+      }
+    ]
+  },
+  "Products": {
+    "_id": "ObjectId",
+    "name": "string",
+    "description": "string",
+    "price": "number",
+    "categories": ["string"],
+    "variations": [
+      {
+        "name": "string",
+        "value": ["string"]
+      }
+    ]
+  }
+}
